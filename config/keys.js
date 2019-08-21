@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const settings = require('/settings');
 
-const server = '127.0.0.1:27017';
-const database = 'nodemin';
+const server = settings.userdata.server;
+const database = settings.userdata.database;
 
 class Database {
   constructor () {

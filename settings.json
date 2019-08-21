@@ -1,0 +1,9 @@
+{
+  "app": {
+    "port": "3030"
+  },
+  "userdata": {
+    "server": "127.0.0.1:27017",
+    "database": "nodemin"
+  }
+}
