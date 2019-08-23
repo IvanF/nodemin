@@ -6,7 +6,9 @@
     "start": "node ./bin/www"
   },
   "standard": {
-    "globals": [ "$" ]
+    "globals": [
+      "$"
+    ]
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

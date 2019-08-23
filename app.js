@@ -8,6 +8,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const fileUpload = require('express-fileupload');
+const settings = require('/settings');
 
 var indexRouter = require('./routes/index');
 var adminRouter = require('./routes/admin');
@@ -35,7 +36,7 @@ app.use(fileUpload());
 // Express session
 app.use(
   session({
-    secret: '1b6d2a9803781dc',
+    secret: settings.app.secret,
     resave: true,
     saveUninitialized: true
   })
