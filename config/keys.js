@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const settings = require('/settings');
+const settings = require('../settings');
 
 const server = settings.userdata.server;
 const database = settings.userdata.database;

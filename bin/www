@@ -7,7 +7,7 @@
 const app = require('../app');
 const debug = require('debug')('admin:server');
 const http = require('http');
-const settings = require('/settings');
+const settings = require('../settings');
 
 /**
  * Get port from environment and store in Express.
